@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Chilanka', cursive;
+}
+
+*:focus {
+    outline: none;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+    flex-direction: column;
+}
+
+section h1 {
+    padding-bottom: 30px;
+    font-size: 2rem;
+    text-shadow: 1px 1px 2px white;
+    animation: zooms 1s linear infinite;
+    animation-direction: alternate;
+}
+
+@keyframes zooms {
+    from {
+        transform: translateX(-20px);
+    }
+    to {
+        transform: translateX(20px);
+    }
+}
+
+.centerDiv {
+    width: 500px;
+    height: 400px;
+    background-color: #e1b12c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 1px 1px 10px 10px #e1b12c;
+}
+
+.insertBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+#value1,
+#value2 {
+    text-align: center;
+    padding: 20px 30px;
+    width: 35px;
+    font-size: 30px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    box-shadow: 1px 1px 0px #999, 2px 2px 0px #999, 3px 3px 0px #999, 4px 4px 0px #999, 5px 5px 0px #999, 6px 6px 0px #999
+}
+
+p {
+    font-size: 60px;
+    margin: 0 8px 0 13px;
+}
+
+.middleBox #answer {
+    margin: 20px 0;
+    padding: 5px 0;
+    font-size: 30px;
+    text-align: center;
+    width: 180px;
+    border-radius: 25px;
+}
+
+.sendBox button {
+    padding: 10px 20px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+    background-color: #718093;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
